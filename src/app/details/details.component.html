@@ -1,0 +1,14 @@
+Print Employees of a Manager
+Manager Name : <input type="text" [(ngModel)]='manager'>
+<button (click)= "printEmployeesByManager()">Print By Manager</button>
+
+<div *ngFor="let emp in filteredEmpByM">{{emp.name}}</div>
+
+<br> <br>
+
+Print all Employees of a Department
+Department Name : <input type="text" [(ngModel)]='department'>
+<button (click)= "printEmployeesByManager()">Print By Department</button>
+
+<div *ngFor="let emp in filteredEmpByD">{{emp.name}}</div>
+
